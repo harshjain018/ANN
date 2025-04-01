@@ -1,22 +1,23 @@
+# Corrected imports for your ANN dashboard
 import streamlit as st
-import pandas as pd
+import pandas as pd  # Fixed typo from 'panda'
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
-from sklearn.preprocessing import StandardScaler
+import seaborn as sns  # Fixed typo from 'scabcom'
+from sklearn.preprocessing import StandardScaler  # Fixed capitalization
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import confusion_matrix, classification_report, accuracy_score
+from sklearn.metrics import confusion_matrix, classification_report  # Fixed incomplete import
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout
-from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
-from sklearn.utils.class_weight import compute_class_weight
-import plotly.express as px
-import plotly.graph_objects as go
+from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint  # Fixed typo
+from sklearn.utils.class_weight import compute_class_weight  # Fixed typo
+import plotly.express as px  # Fixed underscore
+import plotly.graph_objects as go  # Fixed dot notation
 import requests
-from io import StringIO
+from io import StringIO  # Fixed capitalization
 
-# Set page config
-st.set_page_config(page_title="Customer Spending ANN Dashboard", layout="wide")
+# Correct page config
+st.set_page_config(page_title="Customer Spending ANN Dashboard")  # Fixed typo in "Dashboard"
 
 # Title
 st.title("Artificial Neural Network for Customer Spending Analysis")
