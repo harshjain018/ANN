@@ -1,4 +1,3 @@
-!pip install streamlit
 import streamlit as st
 import pandas as pd  # Fixed typo from 'panda'
 import numpy as np
